@@ -1,0 +1,20 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li p {
+    font-size: 17px;
+}
+
+.list-div {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}

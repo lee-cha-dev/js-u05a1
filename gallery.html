@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/gallery.js" ></script>
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+				<li><a href="volunteer.html">Volunteers</a>
+                </li>
+                <li><a href="gallery.html"  class="active">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--ADDED IN IDS TO SECTION, GALLERIES, AND IMAGE ELEMENTS TO ENABLE DOM ACCESS-->
+    <!--WORKED AROUND THE "A TAG" BY SETTING THE DIV TO RELATIVE AND THE IMG ELEM TO ABSOLUTE-->
+    <section id="gallery">
+        <div id="firefighter-gallery" class="gallery">
+          <a id="firefighter-link" target="_blank" href="images/firefighter.jpg">
+            <img id="firefighter-image" src="" alt="firefighter" width="300" height="200">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div id="work-gallery" class="gallery">
+          <a id="work-link" target="_blank" href="images/work.jpg">
+            <img id="work-image" src="" alt="work" width="300" height="200">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div id="silhouette-gallery" class="gallery">
+          <a id="silhouette-link" target="_blank" href="images/silhouette.jpg">
+            <img id="silhouette-image" src="" alt="silhouette" width="300" height="200">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+        <div id="event-gallery" class="gallery">
+          <a id="event-link" target="_blank" href="images/event.jpg">
+            <img id="event-image" src="" alt="event" width="300" height="200">
+          </a>
+          <div class="desc">Add a description of the image here</div>
+        </div>
+    </section>
+
+
+
+    <footer>This events site is for IT3515 tasks.
+    </footer>
+</body>
+<script type="javascript" src="js/gallery.js"></script>
+</html>

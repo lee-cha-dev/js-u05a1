@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/registration.css" />
+</head>
+
+<body onload="configureFormValidation()">
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html">Invitation</a>
+                </li>
+				<li><a href="volunteer.html">Volunteers</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html" class="active">Registration</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form action="#" id="submit-form">
+            <label for="userName">Username: <span id="userNameWarning"></span></label>
+            <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    placeholder="Enter your Username"
+                    title="Enter a username with lower and uppercase letters, digits, and special characters."
+            />
+
+            <label for="Password">Password: <span id="passwordWarning"></span></label>
+            <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your Password"
+                    title="8 or more characters are required."
+            />
+
+            <label for="passwordVerify">Verify your Password: <span id="passwordVerifyWarning"></span></label>
+            <input
+                    type="password"
+                    id="passwordVerify"
+                    name="passwordVerify"
+                    placeholder="Enter in your Password again"
+                    title="Match the password that was previously inputted."
+            />
+
+            <label for="firstName">First Name: <span id="firstNameWarning"></span></label>
+            <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Enter your First Name"
+                    title="Input lower and uppercase letters."
+            />
+            <label for="lastName">Last Name: <span id="lastNameWarning"></span></label>
+            <input
+                    type="text"
+                    id="lastName" name="lastName"
+                    placeholder="Enter your Last Name"
+                    title="Input lower and uppercase letters."
+            />
+            <label for="email">Email: <span id="emailWarning"></span></label>
+            <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your Email Address"
+                    title="enter a full email address, i.e. 'email@email.com'"
+            />
+			<label for="phoneNumber">Phone Number <span id="phoneNumberWarning"></span></label>
+            <input
+                    type="text"
+                    id="phoneNumber"
+                    name="lastName"
+                    placeholder="Enter your Phone Number"
+                    title="Enter a phone number with the format of (999) 999-9999."
+            />
+
+            <div style="display: flex; flex-direction: row;">
+                <label for="signUpNewsletter">Sign up for newsletter:</label>
+                <div id="signUpNewsletter">
+                    <label>
+                        <input id="signUpNewsLetterYes" type="radio" name="signUpNewsletter" value="Yes" checked>
+                    </label> Yes
+                    <label>
+                        <input id="signUpNewsLetterNo" type="radio" name="signUpNewsletter" value="No">
+                    </label> No
+                </div>
+            </div>
+
+            <input id="submit" type="submit" value="Next step" onclick="verifyForm()">
+        </form>
+        <span id="formMessage"></span>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <!--BUTTON TO HANDLE SUBMITTING FORM. ONLY VISIBLE AFTER VALIDATION-->
+            <button
+                id="submit-button"
+                onclick="submitForm()"
+                class="submit"
+            >Submit Form</button>
+        </div>
+    </section>
+
+    <footer>This events site is for IT3515 tasks.
+    </footer>
+</body>
+<script src="js/registration.js"></script>
+
+</html>
